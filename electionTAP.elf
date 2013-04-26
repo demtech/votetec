@@ -1,0 +1,15 @@
+tallyTAP :  type.
+#TAP : counter -> counter -> counter -> counter -> counter -> tallyTAP.
+
+selectTAP : tallyTAP -> tallyTAP -> type.
+
+Candidate_A: selectTAP (#TAP A B C D E) (#TAP A' B C D E)
+		<- inc A A'.
+Candidate_B: selectTAP (#TAP A B C D E) (#TAP A B' C D E)
+		<- inc B B'.
+Candidate_C: selectTAP (#TAP A B C D E) (#TAP A B C' D E)
+		<- inc C C'.
+Candidate_D: selectTAP (#TAP A B C D E) (#TAP A B C D' E)
+		<- inc D D'.
+Blank_Stemme_TAP: selectTAP (#TAP A B C D E) (#TAP A B C D E')
+		<- inc E E'.

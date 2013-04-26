@@ -1,0 +1,6 @@
+counter : type.
+0 : counter.
+! : counter -> counter.
+
+inc : counter -> counter -> type.
+doinc : inc X (! X).

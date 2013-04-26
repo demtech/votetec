@@ -1,0 +1,5 @@
+election: tallyRoot -> type.
+init : election (#Root (#KROGERUP10 0 0 0)).
+cast : election A'
+		<- election A
+		<- selectRoot A A'.

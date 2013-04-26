@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Special twelf constraints:
+	 First letter of value must be lowercase.
+     First letter of id must be uppercase.
+     Only alphanumeric names, no whitespaces.
+     Min and max are positive integers.
+     value is also required to be unique.
+-->
+
+<!ELEMENT Election (group+)>
+<!ELEMENT group (choice*, group*)>
+<!ATTLIST group
+	id ID #REQUIRED
+	value CDATA #REQUIRED
+	min CDATA #REQUIRED
+	max CDATA #REQUIRED>
+<!ELEMENT choice EMPTY>
+<!ATTLIST choice
+	id ID #REQUIRED
+	value CDATA #REQUIRED
+	min CDATA #REQUIRED
+	max CDATA #REQUIRED>

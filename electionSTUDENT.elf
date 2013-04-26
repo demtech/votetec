@@ -1,0 +1,13 @@
+tallySTUDENT :  type.
+#STUDENT : counter -> counter -> counter -> counter -> tallySTUDENT.
+
+selectSTUDENT : tallySTUDENT -> tallySTUDENT -> type.
+
+Candidate_X: selectSTUDENT (#STUDENT W X Y Z) (#STUDENT W' X Y Z)
+		<- inc W W'.
+Candidate_Y: selectSTUDENT (#STUDENT W X Y Z) (#STUDENT W X' Y Z)
+		<- inc X X'.
+Candidate_Z: selectSTUDENT (#STUDENT W X Y Z) (#STUDENT W X Y' Z)
+		<- inc Y Y'.
+Blank_Stemme_STUDENT: selectSTUDENT (#STUDENT W X Y Z) (#STUDENT W X Y Z')
+		<- inc Z Z'.

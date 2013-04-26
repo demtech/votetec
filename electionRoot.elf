@@ -1,0 +1,7 @@
+tallyRoot :  type.
+#Root : tallyKROGERUP10 -> tallyRoot.
+
+selectRoot : tallyRoot -> tallyRoot -> type.
+
+groupKROGERUP10: selectRoot (#Root KROGERUP10) (#Root KROGERUP10')
+		<- selectKROGERUP10 KROGERUP10 KROGERUP10'.

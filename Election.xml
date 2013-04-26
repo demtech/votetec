@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Election SYSTEM "Election.dtd">
+<!-- Currently, twelf only supoprts one vote per voter; min=0(1), max=1 -->
+<Election>
+  <group id = "KROGERUP10" value="KROGERUP-VALG'10" min="1" max="1">
+    
+    <choice id="CLARA" value="Clara" min="0" max="1" />
+    <choice id="NIELSJACOB" value="Niels_Jacob" min="0" max="1" />
+    <choice id="B" value="Blank_Stemme" min="0" max="1" />
+  </group>
+</Election>
