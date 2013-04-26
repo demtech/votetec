@@ -1,4 +1,4 @@
-/*  VoteTec
+(*  VoteTec
  *  Copyright (C) 2009 Eric Cederstrand, Carsten Schuermann
  *  and Kenneth Sjøholm
  *
@@ -16,16 +16,22 @@
  *
  *  You should have received a copy of the GNU General Public License
  *  along with VoteTec.  If not, see <http://www.gnu.org/licenses/>.
- */
+ *)
 
-package model;
 
-/* Describes the requirements for a physical trail, where the 
- * voter's ballot is stored. A physical trail can be a 
- * CD-ROM, USB key, smartcard, paper receipt etc. */
-public interface PhysicalTrail {
-    public String folder = "|CARSTEN";
-	public boolean isPresent();
-	public void setVote(Group e);
-	public void setCompleteVoteList(Group e);
-}
+This is an implementation of a voting scheme that is based on 
+a paper published at revote 2009.  This system was created
+as a study project by Eric Cederstrand and Kenneth Sjøholm.
+Their report can be found here: http://
+
+Edit the file Election.xml to describe the election.
+
+Run the election by starting "java Evoting"
+
+VoteTec generates out of Election.xml user interface and 
+Twelf files.
+
+Note: This system does not use any crypto to protect against
+all kinds of attacks.  This is not a short coming in the implementation
+but was not intended to be part of the project. 
+
