@@ -40,5 +40,5 @@ of attacks.  This is not a shortcoming in the implementation, but was
 not intended to be part of the project.  The point of this project is
 to experiment with logic-based election protocols and integration
 between off-the-shelf mainstream software (in this case, written in
-Java) and logical frameworks like Twelf.
+Java) and logical frameworks like Twelf. http://twelf.org/
 
