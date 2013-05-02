@@ -19,19 +19,26 @@
  *)
 
 
-This is an implementation of a voting scheme that is based on 
-a paper published at revote 2009.  This system was created
-as a study project by Eric Cederstrand and Kenneth Sjøholm.
-Their report can be found here: http://
+This is an implementation of a voting scheme that is based on a paper
+published at REVOTE 2009, "Electronic Elections: Trust Through
+Engineering" by Carsten Schuermann.
+
+http://www.informatik.uni-trier.de/~ley/db/conf/re/revote2009.html
+
+This system was created as a study project by Eric Cederstrand and
+Kenneth Sjøholm.  Their report and a copy of the above paper is in
+this repository in the docs directory.
 
 Edit the file Election.xml to describe the election.
 
-Run the election by starting "java Evoting"
+Run the election by starting "java Evoting".
 
-VoteTec generates out of Election.xml user interface and 
-Twelf files.
+VoteTec generates out of Election.xml user interface and Twelf files.
 
-Note: This system does not use any crypto to protect against
-all kinds of attacks.  This is not a short coming in the implementation
-but was not intended to be part of the project. 
+Note: This system does not use any crypto to protect against all kinds
+of attacks.  This is not a shortcoming in the implementation, but was
+not intended to be part of the project.  The point of this project is
+to experiment with logic-based election protocols and integration
+between off-the-shelf mainstream software (in this case, written in
+Java) and logical frameworks like Twelf.
 
